@@ -18,6 +18,21 @@
 
 ---
 
+## 项目、Skill、命令的关系
+
+这三个名字不是一回事：
+
+- **GitHub 项目名**：`openclaw-codex-switcher`
+- **ClawHub Skill 名**：`codex-switcher`
+- **本地命令名**：`cs`
+
+也就是说：
+- GitHub 上这是一个项目
+- ClawHub 上这是一个 skill
+- 真正在机器上使用时，命令还是 `cs`
+
+---
+
 ## 主要功能
 
 - `cs add`：新增 Codex 账号
@@ -69,6 +84,8 @@
 
 ## 依赖
 
+运行前置：
+
 - Python 3
 - `requests`
 
@@ -77,6 +94,41 @@
 ```bash
 pip install requests
 ```
+
+---
+
+## 安装方式
+
+### 方式一：直接作为本地工具使用
+
+将脚本软链到系统路径：
+
+```bash
+ln -s /path/to/openclaw-codex-switcher/skills/codex-switcher/scripts/cs.sh /usr/local/bin/cs
+```
+
+然后就可以直接使用：
+
+```bash
+cs list
+cs current
+cs quota
+```
+
+### 方式二：作为 Skill 使用
+
+本项目也提供 OpenClaw Skill：
+
+- Skill 名：`codex-switcher`
+- 打包文件：`codex-switcher.skill`
+
+如果你使用 ClawHub 上传目录，请上传：
+
+```text
+skills/codex-switcher
+```
+
+不是整个仓库，也不是别的目录层级。
 
 ---
 
@@ -154,21 +206,6 @@ cs refresh-all
 
 ---
 
-## 安装方式
-
-如果你已经把这个项目放到本机：
-
-```bash
-ln -s /path/to/openclaw-codex-switcher/skills/codex-switcher/scripts/cs.sh /usr/local/bin/cs
-```
-
-或者你也可以把 skill 包安装到 OpenClaw：
-
-- skill 名：`codex-switcher`
-- 打包文件：`codex-switcher.skill`
-
----
-
 ## 安全说明
 
 这是本地高敏感认证工具，请妥善保护：
@@ -195,11 +232,14 @@ ln -s /path/to/openclaw-codex-switcher/skills/codex-switcher/scripts/cs.sh /usr/
 
 ---
 
-## 项目对应关系
+## 发布渠道
 
-- GitHub 项目名：`openclaw-codex-switcher`
-- ClawHub skill 名：`codex-switcher`
-- 本地命令名：`cs`
+- GitHub：源码、Issue、版本迭代
+- ClawHub：Skill 发布
+
+源码仓库：
+
+- `https://github.com/ppaibb/openclaw-codex-switcher`
 
 ---
 
