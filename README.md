@@ -159,7 +159,7 @@ cs refresh-all
 如果你已经把这个项目放到本机：
 
 ```bash
-ln -s /path/to/openclaw-codex-switcher/skills/codex-switcher/scripts/cs /usr/local/bin/cs
+ln -s /path/to/openclaw-codex-switcher/skills/codex-switcher/scripts/cs.sh /usr/local/bin/cs
 ```
 
 或者你也可以把 skill 包安装到 OpenClaw：

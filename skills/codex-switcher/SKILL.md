@@ -8,7 +8,7 @@ description: Local OpenClaw skill for managing multiple OpenAI Codex accounts th
 Use this skill to manage **multiple local Codex accounts** on one OpenClaw host with a simple snapshot workflow.
 
 Bundled executable:
-- `scripts/cs`
+- `scripts/cs.sh`
 
 ## What this skill is
 
